@@ -1,0 +1,48 @@
+{% extends "adminLayout.html" %}
+
+{% block title %}
+Admin
+{% endblock %}
+
+{% block main %}
+
+    <h3>Student Points Summary</h3>
+    <table class="table  table-dark table-hover">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>username</th>
+                <th>Current Points</th>
+                <th>Edit or Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in user %}
+                <tr>
+                    <td>{{row.firstname}}</td>
+                    <td>{{row.username}}</td>
+                    <td>{{row.points}}</td>
+                    <td>
+                        <form action="/edit" method="post" style="display:inline;">
+                            <input type="hidden" name="id" value="{{row.id}}">
+                            <button type="submit">Edit</button>
+                        </form>
+
+                        <form action="/delete_confirm" method="post" style="display:inline;">
+                            <input type="hidden" name="id" value="{{row.id}}">
+                            <button type="submit">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+
+    </table>
+
+
+
+
+
+
+
+{% endblock %}

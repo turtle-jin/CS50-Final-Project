@@ -1,0 +1,6 @@
+*.log
+*.sql
+*.sqlite
+__pycache__
+instance/
+.webassets-cache

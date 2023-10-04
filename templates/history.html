@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    history
+{% endblock %}
+
+{% block main %}
+
+<main class="container  text-center">
+    <h2>{{firstname}}'s Points History</h2><br>
+    <p>You currently have {{points}} points. </p>
+    <table class="table table-dark  table-hover">
+        <thead>
+            <tr>
+                <th>Description</th>
+                <th>Point Change</th>
+                <th>Time</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in transaction_history %}
+                <tr>
+                    <td>{{row.transaction_description}}</td>
+                    <td>{{row.point_change}}</td>
+                    <td>{{row.timestamp}}</td>
+                    <td>{{row.status}}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+
+    </table>
+
+
+
+ </main>
+
+
+
+
+
+
+{% endblock %}

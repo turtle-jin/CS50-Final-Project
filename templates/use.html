@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Request Points
+{% endblock %}
+
+{% block main %}
+<form action="/use" method="post">
+    <h3 class="title">{{firstname}}'s Points: {{points}}</h3><br>
+    <h3 class="title">I would like to use my points to get:</h3><br>
+    <div class="mb-3">
+        <select class="form-select mx-auto w-auto" name="purchaseOptions" id="purchaseOptions">
+            <option value="0">----------------Please choose an option below----------------</option>
+            {% for choice in choices %}
+            <option value="{{choice.option}}|{{choice.value}}">{{choice.option}}--{{choice.value}}pt</option>
+            {% endfor %}
+        </select>
+    </div>
+
+    <button class="btn px-4" type="submit">Request</button>
+</form>
+{% endblock %}

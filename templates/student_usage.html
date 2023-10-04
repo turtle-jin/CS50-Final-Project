@@ -1,0 +1,38 @@
+{% extends "adminLayout.html" %}
+
+{% block title %}
+Admin
+{% endblock %}
+
+{% block main %}
+
+    <h3>Student Usage Summary</h3>
+    <table class="table table-dark  table-hover">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Point Change</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in usage %}
+                <tr>
+                    <td>{{row.firstname}}</td>
+                    <td>{{row.transaction_description}}</td>
+                    <td>{{row.point_change}}</td>
+                    <td>{{row.timestamp}}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+
+    </table>
+
+
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends"adminLayout.html" %}
+
+{% block title %}
+Delete User
+{% endblock %}
+
+{% block main %}
+
+
+    <p>Are you sure you want to delete <b>{{delete_name}}</b>?</p>
+
+    <div class="yesnoButtons">
+        <form action="/delete" method="post" style="display:inline;">
+            <input type="hidden" name="id" value="{{id}}">
+            <button type="submit">Yes</button>
+        </form>
+
+        <form action="/adminindex" method="get" style="display:inline;">
+            <button type="submit">No</button>
+        </form>
+    </div>
+
+
+{% endblock %}

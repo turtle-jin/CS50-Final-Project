@@ -1,0 +1,28 @@
+{% extends"adminLayout.html" %}
+
+{% block title %}
+Edit User
+{% endblock %}
+
+{% block main %}
+
+
+    <p>You are editing <b>{{edit_name}}</b>'s points:</p>
+
+    <form class="editUpdate" action="/update" method="post">
+
+
+        <div>
+            <tag>Points:</tag>
+            <input type="number" min="0"  name="points" value="{{points}}" placeholder="Enter new points">
+        </div>
+
+        <input type="hidden" name="id" value="{{id}}">
+        <button type="submit">Save</button>
+
+    </form>
+    <form action="/adminindex" method="get" class="editUpdate">
+        <button type="submit">Cancel</button>
+    </form>
+
+{% endblock %}

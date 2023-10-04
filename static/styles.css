@@ -1,0 +1,108 @@
+body {
+    background: #735d78;
+
+}
+
+
+
+#mainNavbar {
+    background-color:#9D8189;
+    font-size: 1rem;
+
+}
+
+
+footer {
+
+    color: #A78295;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    color: #463f3a;
+    font-weight: 400;
+    font-size: 1.5vw;
+    padding-right: 10px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .3),
+              -23px 0 20px -23px rgba(0, 0, 0, .8),
+              23px 0 20px -23px rgba(0, 0, 0, .8),
+              inset 0 0 40px rgba(0, 0, 0, .1);
+              border-radius: 20px;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
+    color: #f5ebe0;
+
+    transform: translateY(-0.25em)
+
+
+}
+
+main button.btn {
+    color: #463f3a;
+    background-color: #9D8189;
+    font-weight: 400;
+    font-size: 20px;
+    padding-right: 10px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .3),
+              -23px 0 20px -23px rgba(0, 0, 0, .8),
+              23px 0 20px -23px rgba(0, 0, 0, .8),
+              inset 0 0 40px rgba(0, 0, 0, .1);
+              border-radius: 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+main button:hover {
+    color: #463f3a;
+    box-shadow: 0 5px 15px pink;
+}
+
+.form-control {
+    background-color: pink;
+    border: turquoise;
+    border-width: 20vw;
+    border-radius: 10px;
+}
+
+
+
+main {
+    margin-top: 15vh;
+}
+
+.title {
+    color: #2c2723;
+}
+
+.flashmsg {
+    background-color: #b5838d;
+    border-color: #9D8189;
+    color: #463f3a;
+    font-weight: 600;
+    font-size: large;
+}
+
+main h2 {
+    font-size: 5vw;
+    font-weight: 600;
+    color: rgba(29, 15, 15, 0.712);
+    font-family: 'Amatic SC', cursive;
+}
+
+main p {
+    font-size: 2vw;
+
+    color: rgba(29, 15, 15, 0.712);
+}
+
+#ptchoice {
+    background-color: pink;
+    font-size: 1.5vw;
+    font-weight: 600;
+    color:#735d78
+}
+#purchaseOptions {
+    background-color: pink;
+    font-size: 1.5vw;
+    font-weight: 600;
+    color:#735d78
+}
