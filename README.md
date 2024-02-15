@@ -1,6 +1,6 @@
 # CS50 Final Project--Student Incentive Tracker
 
-### Video Demo:  <https://www.youtube.com/watch?v=o6VuOTA8QSc>
+
 
 ### About the Project:
 
